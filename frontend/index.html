@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dany - Media Processing Template</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Dany Template</h1>
+            <p class="subtitle">Educational Architecture Demonstration</p>
+        </header>
+
+        <main>
+            <div class="input-card">
+                <form id="process-form">
+                    <div class="input-group">
+                        <label for="url-input">Media URL</label>
+                        <input type="url" id="url-input" placeholder="https://example.com/media/123" required>
+                    </div>
+                    
+                    <button type="submit" id="submit-btn">
+                        <span class="btn-text">Process Media</span>
+                        <div class="spinner hidden"></div>
+                    </button>
+                </form>
+            </div>
+
+            <div id="result-container" class="result-card hidden">
+                <h3>Processing Result</h3>
+                <div class="disclaimer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                    <span id="result-disclaimer">Disclaimer text</span>
+                </div>
+                
+                <div class="result-data">
+                    <pre id="json-output"></pre>
+                </div>
+            </div>
+
+            <div id="error-container" class="error-card hidden">
+                <p id="error-message">An error occurred.</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>This UI interacts with a mock backend API. No real extraction occurs.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
