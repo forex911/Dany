@@ -25,48 +25,6 @@ The system follows a standard client-server architecture pattern:
 
 For more details, see [Architecture Documentation](docs/architecture.md).
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Python 3.8+
-- pip (Python package installer)
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/dany-template.git
-   cd dany-template
-   ```
-
-2. Create a virtual environment (optional but recommended):
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. Install requirements:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-### Running the Application
-
-1. Start the backend development server:
-   ```bash
-   python backend/app.py
-   ```
-   The backend will be available at `http://127.0.0.0:5000`.
-
-2. Open the frontend:
-   Simply open `frontend/index.html` in your web browser.
-
-## 📚 Documentation
-
-- [System Architecture](docs/architecture.md)
-- [API Reference](docs/api.md)
-
 ## 🤝 Contributing
 
 Contributions are welcome for improving the template architecture, documentation, and overall structure. Please do **not** submit PRs containing real downloading code.
